@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: default
+  data:
+    mongodb:
+      database: persons
+---
+spring:
+  profiles: local
