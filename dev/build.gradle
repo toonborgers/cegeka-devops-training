@@ -25,6 +25,11 @@ targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    if(project.hasProperty("local-maven-repo")){
+        flatDir {
+            dirs local-maven-repo
+        }
+    }
 }
 
 dependencies {
